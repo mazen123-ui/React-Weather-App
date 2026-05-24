@@ -33,7 +33,7 @@ export default function Map() {
       />
 
       <Marker position={[lat, long]}>
-        <Popup>
+        <Popup offset={[0, -25]}>
           <b>{city}</b>
         </Popup>
       </Marker>
