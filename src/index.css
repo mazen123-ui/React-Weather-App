@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&family=Cairo:wght@200;400;600;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 17px; /* Slightly larger base font size */
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Arabic Specific Font & Scaling */
+html[lang="ar"] body {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* RTL Adjustments */
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* Smooth transitions */
+body {
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Global Typography Tweaks */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em;
+}
+
+html[lang="ar"] h1, 
+html[lang="ar"] h2, 
+html[lang="ar"] h3 {
+  letter-spacing: 0;
+  line-height: 1.4;
+}
