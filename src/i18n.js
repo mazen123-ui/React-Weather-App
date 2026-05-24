@@ -14,10 +14,10 @@ i18n
       caches: ["cookie"],
     },
     backend: {
-      loadPath: "/locales/{{lng}}/translations.json",
+      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/translations.json`,
     },
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false,
     },
   });
 
